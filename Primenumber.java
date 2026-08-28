@@ -1,0 +1,21 @@
+public class Primenumber {
+    public static void main(String args[]){
+        int n=30124;
+        int i,count=0;
+        for(i=2;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                count ++;
+                break;
+                
+            }
+        }
+     if(count == 0 && n>1){
+        System.out.println(n+" Is a prime number:");
+     }
+     else{
+        System.out.println(n+" Is not a prime number:");
+     }
+
+    }
+    
+}
